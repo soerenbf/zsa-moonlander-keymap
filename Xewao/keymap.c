@@ -176,6 +176,33 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 // Achordion
+// https://getreuer.info/posts/keyboards/achordion/index.html
 void matrix_scan_user(void) {
   achordion_task();
+}
+
+bool achordion_chord(uint16_t tap_hold_keycode,
+                     keyrecord_t* tap_hold_record,
+                     uint16_t other_keycode,
+                     keyrecord_t* other_record) {
+  // Also allow same-hand holds when the other key is in the rows below the
+  // alphas. I need the `% (MATRIX_ROWS / 2)` because my keyboard is split.
+  if (other_record->event.key.row % (MATRIX_ROWS / 2) >= 3) { return true; }
+
+  // Otherwise, follow the opposite hands rule.
+  return achordion_opposite_hands(tap_hold_record, other_record);
+}
+
+bool achordion_eager_mod(uint8_t mod) {
+  switch (mod) {
+    case MOD_LSFT:
+    case MOD_RSFT:
+    case MOD_LCTL:
+    case MOD_RCTL:
+    case MOD_LALT:
+      return true;  // Eagerly apply Shift, Alt, and Ctrl mods.
+
+    default:
+      return false;
+  }
 }
