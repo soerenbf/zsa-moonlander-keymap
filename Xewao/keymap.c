@@ -179,7 +179,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 // https://getreuer.info/posts/keyboards/achordion/index.html
 void matrix_scan_user(void) {
   achordion_task();
-}
+
 
 bool achordion_chord(uint16_t tap_hold_keycode,
                      keyrecord_t* tap_hold_record,
@@ -200,6 +200,8 @@ bool achordion_eager_mod(uint8_t mod) {
     case MOD_LCTL:
     case MOD_RCTL:
     case MOD_LALT:
+    case MOD_LGUI:
+    case MOD_RGUI:
       return true;  // Eagerly apply Shift, Alt, and Ctrl mods.
 
     default:
