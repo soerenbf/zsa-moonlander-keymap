@@ -175,11 +175,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 }
 
-
 // Achordion
 // https://getreuer.info/posts/keyboards/achordion/index.html
 void matrix_scan_user(void) {
   achordion_task();
+}
 
 bool achordion_chord(uint16_t tap_hold_keycode,
                      keyrecord_t* tap_hold_record,
