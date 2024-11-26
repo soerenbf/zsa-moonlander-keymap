@@ -10,4 +10,4 @@ CAPS_WORD_ENABLE = yes
 DYNAMIC_TAPPING_TERM_ENABLE = yes
 
 # Custom QMK stuff
-SRC += ../features/achordion.c
+SRC += features/achordion.c
