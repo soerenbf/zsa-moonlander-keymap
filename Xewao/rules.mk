@@ -9,4 +9,4 @@ SPACE_CADET_ENABLE = no
 CAPS_WORD_ENABLE = yes
 
 # Custom QMK stuff
-SRC += features/achordion.c
+SRC += ../features/achordion.c

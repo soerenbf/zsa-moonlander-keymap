@@ -1,6 +1,6 @@
 #include QMK_KEYBOARD_H
 #include "version.h"
-#include "features/achordion.h"
+#include "../features/achordion.h"
 #define MOON_LED_LEVEL LED_LEVEL
 #define ML_SAFE_RANGE SAFE_RANGE
 
@@ -201,7 +201,7 @@ bool achordion_eager_mod(uint8_t mod) {
     case MOD_RCTL:
     case MOD_LALT:
     case MOD_LGUI:
-    case MOD_RGUI:
+    case MODrRGUI:
       return true;  // Eagerly apply Shift, Alt, and Ctrl mods.
 
     default:
