@@ -233,7 +233,7 @@ bool achordion_eager_mod(uint8_t mod) {
 // https://getreuer.info/posts/keyboards/custom-shift-keys/index.html
 const custom_shift_key_t custom_shift_keys[] = {
   {LT(4,KC_BSPC), KC_DEL}, // Shift bksp is del
-  {RALT(KC_DOT , KC_EXLM}, // Shift . is !
+  {KC_DOT , KC_EXLM}, // Shift . is !
   {KC_COMM, KC_ASTR}, // Shift , is *
   // {KC_MINS, KC_EQL }, // Shift - is =
   // {KC_COLN, KC_SCLN}, // Shift : is ; 
