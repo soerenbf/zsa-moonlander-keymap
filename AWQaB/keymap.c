@@ -1,3 +1,4 @@
+#include <stdint.h>
 #include QMK_KEYBOARD_H
 #include "version.h"
 #define MOON_LED_LEVEL LED_LEVEL
@@ -180,6 +181,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 
+const uint16_t HOME_T = LCTL_T(KC_T);
+const uint16_t HOME_N = LGUI_T(KC_N);
 
 // Achordion
 // https://getreuer.info/posts/keyboards/achordion/index.html
