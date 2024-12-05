@@ -193,8 +193,11 @@ bool achordion_chord(uint16_t tap_hold_keycode,
                      keyrecord_t* other_record) {
   // Exceptionally consider the following chords as holds
   switch (tap_hold_keycode) {
-    case HOME_T:  // T + U.
+    case HOME_T:  // CTRL + U.
       if (other_keycode == KC_D) { return true; }
+      break;
+    case HOME_N:  // GUI + C/V/Z/W.
+      if (other_keycode == KC_C || other_keycode == KC_V || other_keycode == KC_Z || other_keycode == KC_W) { return true; }
       break;
   }
 
