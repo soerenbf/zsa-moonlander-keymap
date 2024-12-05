@@ -235,7 +235,8 @@ const custom_shift_key_t custom_shift_keys[] = {
   {LT(4,KC_BSPC), KC_DEL}, // Shift bksp is del
   {KC_DOT , KC_EXLM}, // Shift . is !
   {KC_COMM, KC_ASTR}, // Shift , is *
-  // {KC_MINS, KC_EQL }, // Shift - is =
+  {KC_MINS, KC_EQL }, // Shift - is =
+  {KC_PLUS, KC_UNDS}, // Shift + is _
   // {KC_COLN, KC_SCLN}, // Shift : is ; 
 };
 uint8_t NUM_CUSTOM_SHIFT_KEYS =
