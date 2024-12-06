@@ -181,9 +181,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 
-const uint16_t HOME_T = LCTL(KC_T);
-const uint16_t HOME_N = LGUI(KC_N);
-const uint16_t HOME_DOT = RALT(KC_DOT);
+const uint16_t HOME_T = LCTL_T(KC_T);
+const uint16_t HOME_N = LGUI_T(KC_N);
+const uint16_t HOME_DOT = RALT_T(KC_DOT);
 
 // Achordion
 // https://getreuer.info/posts/keyboards/achordion/index.html
