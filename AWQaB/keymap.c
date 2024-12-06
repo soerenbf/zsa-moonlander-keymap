@@ -183,6 +183,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 const uint16_t HOME_T = LCTL(KC_T);
 const uint16_t HOME_N = LGUI(KC_N);
+const uint16_t HOME_DOT = RALT(KC_DOT);
 
 // Achordion
 // https://getreuer.info/posts/keyboards/achordion/index.html
@@ -233,12 +234,11 @@ bool achordion_eager_mod(uint8_t mod) {
 // https://getreuer.info/posts/keyboards/custom-shift-keys/index.html
 const custom_shift_key_t custom_shift_keys[] = {
   {LT(4,KC_BSPC), KC_DEL}, // Shift bksp is del
-  {KC_DOT , KC_COLN}, // Shift . is :
+  {HOME_DOT , KC_COLN}, // Shift . is :
   {KC_COMM, KC_SCLN}, // Shift , is ;
   {KC_MINS, KC_EQL }, // Shift - is =
   {KC_UNDS, KC_EXLM}, // Shift _ is !
-  {KC_PLUS, KC_ASTR}, // Shift + is _
-  // {KC_COLN, KC_SCLN}, // Shift : is ; 
+  {KC_PLUS, KC_ASTR}, // Shift + is *
 };
 uint8_t NUM_CUSTOM_SHIFT_KEYS =
     sizeof(custom_shift_keys) / sizeof(custom_shift_key_t);
