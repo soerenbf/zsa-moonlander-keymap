@@ -155,14 +155,14 @@ bool achordion_chord(uint16_t tap_hold_keycode,
                      uint16_t other_keycode,
                      keyrecord_t* other_record) {
   // Exceptionally consider the following chords as holds
-  switch (tap_hold_keycode) {
-    case HOME_T:  // CTRL + D.
-      if (other_keycode == KC_D) { return true; }
-      break;
-    case HOME_S:  // GUI + C/V/Z/W.
-      if (other_keycode == KC_C || other_keycode == KC_V || other_keycode == KC_Z || other_keycode == KC_W) { return true; }
-      break;
-  }
+  /*switch (tap_hold_keycode) {*/
+  /*  case HOME_T:  // CTRL + D.*/
+  /*    if (other_keycode == KC_D) { return true; }*/
+  /*    break;*/
+  /*  case HOME_S:  // GUI + C/V/Z/W.*/
+  /*    if (other_keycode == KC_C || other_keycode == KC_V || other_keycode == KC_Z || other_keycode == KC_W) { return true; }*/
+  /*    break;*/
+  /*}*/
 
   // Also allow same-hand holds when the other key is in the rows below the
   // alphas. I need the `% (MATRIX_ROWS / 2)` because my keyboard is split.
