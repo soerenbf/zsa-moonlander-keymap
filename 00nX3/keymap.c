@@ -19,9 +19,9 @@ enum tap_dance_codes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
-    KC_GRAVE,       KC_F,           KC_P,           KC_D,           KC_L,           KC_X,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_PLUS,        KC_U,           KC_O,           KC_Y,           KC_B,           KC_AT,          
+    KC_GRAVE,       KC_V,           KC_W,           KC_D,           KC_L,           KC_X,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_PLUS,        KC_U,           KC_O,           KC_Y,           KC_B,           KC_AT,          
     KC_Z,           MT(MOD_LGUI, KC_S),MT(MOD_LALT, KC_N),MT(MOD_LCTL, KC_T),MT(MOD_LSFT, KC_H),KC_K,           KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_EQUAL,       MT(MOD_RSFT, KC_A),MT(MOD_RCTL, KC_E),MT(MOD_LALT, KC_I),MT(MOD_RGUI, KC_C),KC_Q,           
-    TD(DANCE_0),    KC_V,           MT(MOD_RALT, KC_W),KC_G,           KC_M,           KC_J,                                           KC_SLASH,       KC_DOT,         KC_COMMA,       MT(MOD_RALT, KC_MINUS),KC_QUOTE,       KC_AMPR,        
+    TD(DANCE_0),    KC_F,           MT(MOD_RALT, KC_P),KC_G,           KC_M,           KC_J,                                           KC_SLASH,       KC_DOT,         KC_COMMA,       MT(MOD_RALT, KC_MINUS),KC_QUOTE,       KC_AMPR,        
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, LT(3,KC_TAB),   KC_TRANSPARENT,                                                                                                 KC_TRANSPARENT, CW_TOGG,        KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     LT(1,KC_R),     LT(2,KC_BSPC),  KC_TRANSPARENT,                 KC_TRANSPARENT, KC_ENTER,       LT(4,KC_SPACE)
   ),
