@@ -221,7 +221,7 @@ tap_dance_action_t tap_dance_actions[] = {
 const uint16_t HOME_T = LCTL_T(KC_T);
 const uint16_t HOME_S = LGUI_T(KC_S);
 const uint16_t LT_R = LT(1,KC_R);
-const uint16_t LT_BKSP = LT(2,KC_BKSP);
+const uint16_t LT_BSPC = LT(2,KC_BSPC);
 
 // Achordion
 // https://getreuer.info/posts/keyboards/achordion/index.html
@@ -273,7 +273,7 @@ bool achordion_eager_mod(uint8_t mod) {
 // custom shift keys
 // https://getreuer.info/posts/keyboards/custom-shift-keys/index.html
 const custom_shift_key_t custom_shift_keys[] = {
-  {LT_BKSP, KC_DEL}, // Shift bksp is del
+  {LT_BSPC, KC_DEL}, // Shift backspace is del
   {KC_DOT , KC_COLN}, // Shift . is :
   {KC_COMM, KC_SCLN}, // Shift , is ;
   {KC_EQL , KC_EXLM}, // Shift = is !
