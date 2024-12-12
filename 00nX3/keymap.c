@@ -221,6 +221,7 @@ tap_dance_action_t tap_dance_actions[] = {
 const uint16_t HOME_T = LCTL_T(KC_T);
 const uint16_t HOME_S = LGUI_T(KC_S);
 const uint16_t LT_R = LT(1,KC_R);
+const uint16_t LT_BKSP = LT(2,KC_BKSP);
 
 // Achordion
 // https://getreuer.info/posts/keyboards/achordion/index.html
