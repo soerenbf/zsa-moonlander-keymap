@@ -414,7 +414,7 @@ const custom_shift_key_t custom_shift_keys[] = {
   {KC_PLUS, KC_ASTR}, // Shift + is *
   {KC_AT  , KC_HASH}, // Shift @ is #
   {KC_AMPR, KC_PIPE}, // Shift & is |
-  {KC_BSLS, KC_CIRC}, // Shift \ is ^
+  {KC_BSLS, KC_PERC}, // Shift \ is %
 };
 uint8_t NUM_CUSTOM_SHIFT_KEYS =
     sizeof(custom_shift_keys) / sizeof(custom_shift_key_t);
