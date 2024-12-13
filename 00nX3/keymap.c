@@ -352,7 +352,7 @@ const uint16_t HOME_S = LGUI_T(KC_S);
 const uint16_t LT_R = LT(1,KC_R);
 const uint16_t LT_TAB = LT(2,KC_TAB);
 const uint16_t LT_ESC = LT(3,KC_ESC);
-const uint16_t LT_SPC = LT(4,KC_SPC);
+const uint16_t LT_ENT = LT(4,KC_ENT);
 
 // Achordion
 // https://getreuer.info/posts/keyboards/achordion/index.html
@@ -369,7 +369,7 @@ bool achordion_chord(uint16_t tap_hold_keycode,
     case LT_R:
     case LT_TAB:
     case LT_ESC:
-    case LT_SPC:
+    case LT_ENT:
       return true;
   /*  case HOME_T:  // CTRL + D.*/
   /*    if (other_keycode == KC_D) { return true; }*/
@@ -414,7 +414,7 @@ const custom_shift_key_t custom_shift_keys[] = {
   {KC_PLUS, KC_ASTR}, // Shift + is *
   {KC_AT  , KC_HASH}, // Shift @ is #
   {KC_AMPR, KC_PIPE}, // Shift & is |
-  {KC_BSLS, KC_PERC}, // Shift \ is %
+  {KC_BSLS, KC_PERC}, // Shift \ is o
 };
 uint8_t NUM_CUSTOM_SHIFT_KEYS =
     sizeof(custom_shift_keys) / sizeof(custom_shift_key_t);
