@@ -350,9 +350,8 @@ tap_dance_action_t tap_dance_actions[] = {
 const uint16_t HOME_N = LCTL_T(KC_N);
 const uint16_t HOME_C = LGUI_T(KC_C);
 const uint16_t LT_R = LT(1,KC_R);
-const uint16_t LT_TAB = TD(DANCE_3);
-const uint16_t LT_ESC = TD(DANCE_1);
-const uint16_t LT_SPC = TD(DANCE_2);
+const uint16_t LT_TAB = LT(3,KC_TAB);
+const uint16_t LT_ESC = LT(2,KC_ESC);
 
 // Achordion
 // https://getreuer.info/posts/keyboards/achordion/index.html
@@ -369,7 +368,6 @@ bool achordion_chord(uint16_t tap_hold_keycode,
     case LT_R:
     case LT_TAB:
     case LT_ESC:
-    case LT_SPC:
       return true;
   /*  case HOME_T:  // CTRL + D.*/
   /*    if (other_keycode == KC_D) { return true; }*/
