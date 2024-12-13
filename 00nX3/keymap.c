@@ -278,7 +278,7 @@ bool achordion_eager_mod(uint8_t mod) {
 // custom shift keys
 // https://getreuer.info/posts/keyboards/custom-shift-keys/index.html
 const custom_shift_key_t custom_shift_keys[] = {
-  {LT_BSPC, KC_DEL}, // Shift backspace is del
+  {KC_BSPC, KC_DEL }, // Shift backspace is del
   {KC_DOT , KC_COLN}, // Shift . is :
   {KC_COMM, KC_SCLN}, // Shift , is ;
   {KC_EQL , KC_EXLM}, // Shift = is !
