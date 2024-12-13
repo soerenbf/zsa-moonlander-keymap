@@ -352,7 +352,7 @@ const uint16_t HOME_S = LGUI_T(KC_S);
 const uint16_t LT_R = LT(1,KC_R);
 const uint16_t LT_TAB = LT(2,KC_TAB);
 const uint16_t LT_ESC = LT(3,KC_ESC);
-const uint16_t LT_ENT = LT(4,KC_ENT);
+const uint16_t LT_SPC = LT(4,KC_SPC);
 
 // Achordion
 // https://getreuer.info/posts/keyboards/achordion/index.html
@@ -369,7 +369,7 @@ bool achordion_chord(uint16_t tap_hold_keycode,
     case LT_R:
     case LT_TAB:
     case LT_ESC:
-    case LT_ENT:
+    case LT_SPC:
       return true;
   /*  case HOME_T:  // CTRL + D.*/
   /*    if (other_keycode == KC_D) { return true; }*/
