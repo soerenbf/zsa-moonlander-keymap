@@ -347,8 +347,9 @@ tap_dance_action_t tap_dance_actions[] = {
 
 
 // ------------------------ CUSTOM IMPLEMENTATION --------------------------
-const uint16_t HOME_N = LCTL_T(KC_N);
-const uint16_t HOME_C = LGUI_T(KC_C);
+const uint16_t HM_N = LCTL_T(KC_N);
+const uint16_t HM_C = LGUI_T(KC_C);
+const uint16_t HM_COMM = RALT_T(KC_COMM);
 const uint16_t LT_R = LT(1,KC_R);
 const uint16_t LT_TAB = LT(3,KC_TAB);
 const uint16_t LT_ESC = LT(2,KC_ESC);
@@ -407,12 +408,13 @@ bool achordion_eager_mod(uint8_t mod) {
 const custom_shift_key_t custom_shift_keys[] = {
   {KC_BSPC, KC_DEL }, // Shift backspace is del
   {KC_DOT , KC_COLN}, // Shift . is :
-  {KC_COMM, KC_SCLN}, // Shift , is ;
+  {HM_COMM, KC_SCLN}, // Shift , is ;
   {KC_EQL , KC_EXLM}, // Shift = is !
-  {KC_PLUS, KC_ASTR}, // Shift + is *
+  {KC_UNDS, KC_ASTR}, // Shift _ is *
+  {KC_MINS, KC_PLUS}, // Shift - is +
   {KC_AT  , KC_HASH}, // Shift @ is #
   {KC_AMPR, KC_PIPE}, // Shift & is |
-  {KC_BSLS, KC_PERC}, // Shift \ is o
+  {KC_BSLS, KC_PERC}, // Shift \ is %
 };
 uint8_t NUM_CUSTOM_SHIFT_KEYS =
     sizeof(custom_shift_keys) / sizeof(custom_shift_key_t);
