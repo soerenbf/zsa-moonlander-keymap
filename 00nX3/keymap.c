@@ -16,9 +16,9 @@ enum tap_dance_codes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
-    KC_CIRC,        KC_V,           KC_W,           KC_M,           KC_G,           KC_X,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_UNDS,        KC_U,           KC_O,           KC_Y,           KC_B,           KC_AT,          
+    KC_CIRC,        KC_P,           KC_W,           KC_M,           KC_G,           KC_X,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_UNDS,        KC_U,           KC_O,           KC_Y,           KC_B,           KC_AT,          
     TD(DANCE_0),    MT(MOD_LGUI, KC_C),MT(MOD_LALT, KC_S),MT(MOD_LCTL, KC_N),MT(MOD_LSFT, KC_T),KC_K,           KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_MINUS,       MT(MOD_RSFT, KC_A),MT(MOD_RCTL, KC_E),MT(MOD_LALT, KC_I),MT(MOD_RGUI, KC_H),KC_Z,           
-    KC_GRAVE,       KC_P,           MT(MOD_RALT, KC_F),KC_L,           KC_D,           KC_J,                                           KC_EQUAL,       KC_COMMA,       KC_QUOTE,       MT(MOD_RALT, KC_DOT),KC_SLASH,       KC_PIPE,        
+    KC_GRAVE,       KC_V,           MT(MOD_RALT, KC_F),KC_L,           KC_D,           KC_J,                                           KC_EQUAL,       KC_COMMA,       KC_QUOTE,       MT(MOD_RALT, KC_DOT),KC_SLASH,       KC_PIPE,        
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     LT(2,KC_ESCAPE),LT(1,KC_R),     LT(3,KC_TAB),                   KC_ENTER,       LT(4,KC_SPACE), KC_BSPC
   ),
