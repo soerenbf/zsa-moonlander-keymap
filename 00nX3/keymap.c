@@ -282,7 +282,7 @@ const custom_shift_key_t custom_shift_keys[] = {
   {KC_DOT , KC_COLN}, // Shift . is :
   {KC_COMM, KC_SCLN}, // Shift , is ;
   /*{KC_UNDS, KC_ASTR}, // Shift _ is **/
-  {KC_ASTR, KC_BSLS}, // Shift * is \
+  {KC_ASTR, KC_BSLS}, /* Shift * is \ */
   {KC_MINS, KC_PLUS}, // Shift - is +
   {KC_EQL , KC_EXLM}, // Shift = is !
   {KC_AT  , KC_HASH}, // Shift @ is #
