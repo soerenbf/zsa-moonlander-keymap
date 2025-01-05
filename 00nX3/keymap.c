@@ -224,6 +224,7 @@ const uint16_t HM_C = LGUI_T(KC_C);
 const uint16_t LT_R = LT(1,KC_R);
 const uint16_t LT_TAB = LT(3,KC_TAB);
 const uint16_t LT_ESC = LT(2,KC_ESC);
+const uint16_t LT_SPC = LT(4,KC_SPC);
 
 // Achordion
 // https://getreuer.info/posts/keyboards/achordion/index.html
@@ -280,12 +281,14 @@ const custom_shift_key_t custom_shift_keys[] = {
   {KC_BSPC, KC_DEL }, // Shift backspace is del
   {KC_DOT , KC_COLN}, // Shift . is :
   {KC_COMM, KC_SCLN}, // Shift , is ;
-  {KC_UNDS, KC_ASTR}, // Shift _ is *
+  /*{KC_UNDS, KC_ASTR}, // Shift _ is **/
+  {KC_ASTR, KC_BSLS}, // Shift * is \
   {KC_MINS, KC_PLUS}, // Shift - is +
   {KC_EQL , KC_EXLM}, // Shift = is !
   {KC_AT  , KC_HASH}, // Shift @ is #
   {KC_PIPE, KC_AMPR}, // Shift | is &
   {KC_CIRC, KC_PERC}, // Shift ^ is %
+  {LT_SPC , KC_UNDS}, // Shift space is _
   /*{KC_QUES, KC_EXLM}, // Shift ? is !*/
   /*{KC_SLSH, KC_ASTR}, // Shift / is **/
 };
